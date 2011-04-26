@@ -1,17 +1,16 @@
 //
 //  DCControlsAppDelegate.h
-//  DCControls
 //
-//  Created by Domestic Cat on 26/04/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Domestic Cat Software. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface DCControlsAppDelegate : NSObject <UIApplicationDelegate> {
-
+@interface DCControlsAppDelegate : NSObject <UIApplicationDelegate>
+{
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 
 @end

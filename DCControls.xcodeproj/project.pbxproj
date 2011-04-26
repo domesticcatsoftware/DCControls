@@ -12,8 +12,15 @@
 		AB10357513669BE900216FE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB10357413669BE900216FE5 /* CoreGraphics.framework */; };
 		AB10357B13669BE900216FE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB10357913669BE900216FE5 /* InfoPlist.strings */; };
 		AB10357E13669BE900216FE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB10357D13669BE900216FE5 /* main.m */; };
-		AB10358113669BE900216FE5 /* DCControlsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB10358013669BE900216FE5 /* DCControlsAppDelegate.m */; };
-		AB10358413669BE900216FE5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB10358213669BE900216FE5 /* MainWindow.xib */; };
+		AB10358C13669C0100216FE5 /* DCControlsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB10358B13669C0100216FE5 /* DCControlsAppDelegate.m */; };
+		AB10358E13669C0C00216FE5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB10358D13669C0C00216FE5 /* MainWindow.xib */; };
+		AB10359D13669C1A00216FE5 /* DCKnobDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB10359413669C1A00216FE5 /* DCKnobDemoViewController.m */; };
+		AB10359F13669C1A00216FE5 /* DCSliderDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB10359813669C1A00216FE5 /* DCSliderDemoViewController.m */; };
+		AB1035A013669C1A00216FE5 /* DCSliderDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB10359913669C1A00216FE5 /* DCSliderDemoViewController.xib */; };
+		AB1035A113669C1A00216FE5 /* DCKnobDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB10359A13669C1A00216FE5 /* DCKnobDemoViewController.xib */; };
+		AB1035B01366B14D00216FE5 /* DCControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1035AF1366B14D00216FE5 /* DCControl.m */; };
+		AB1035B51366B15700216FE5 /* DCKnob.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1035B21366B15700216FE5 /* DCKnob.m */; };
+		AB1035B61366B15700216FE5 /* DCSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1035B41366B15700216FE5 /* DCSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +28,25 @@
 		AB10357013669BE900216FE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AB10357213669BE900216FE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AB10357413669BE900216FE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		AB10357813669BE900216FE5 /* DCControls-Info.plist */ = {isa = PBXFileReference; path = "DCControls-Info.plist"; sourceTree = "<group>"; };
+		AB10357813669BE900216FE5 /* DCControls-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCControls-Info.plist"; sourceTree = "<group>"; };
 		AB10357A13669BE900216FE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AB10357C13669BE900216FE5 /* DCControls-Prefix.pch */ = {isa = PBXFileReference; path = "DCControls-Prefix.pch"; sourceTree = "<group>"; };
+		AB10357C13669BE900216FE5 /* DCControls-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCControls-Prefix.pch"; sourceTree = "<group>"; };
 		AB10357D13669BE900216FE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AB10357F13669BE900216FE5 /* DCControlsAppDelegate.h */ = {isa = PBXFileReference; path = DCControlsAppDelegate.h; sourceTree = "<group>"; };
-		AB10358013669BE900216FE5 /* DCControlsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCControlsAppDelegate.m; sourceTree = "<group>"; };
-		AB10358313669BE900216FE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		AB10358A13669C0100216FE5 /* DCControlsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCControlsAppDelegate.h; path = DCControls/DCControlsAppDelegate.h; sourceTree = "<group>"; };
+		AB10358B13669C0100216FE5 /* DCControlsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCControlsAppDelegate.m; path = DCControls/DCControlsAppDelegate.m; sourceTree = "<group>"; };
+		AB10358D13669C0C00216FE5 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = DCControls/MainWindow.xib; sourceTree = "<group>"; };
+		AB10359313669C1A00216FE5 /* DCKnobDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCKnobDemoViewController.h; path = DCControls/DCKnobDemoViewController.h; sourceTree = "<group>"; };
+		AB10359413669C1A00216FE5 /* DCKnobDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCKnobDemoViewController.m; path = DCControls/DCKnobDemoViewController.m; sourceTree = "<group>"; };
+		AB10359713669C1A00216FE5 /* DCSliderDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCSliderDemoViewController.h; path = DCControls/DCSliderDemoViewController.h; sourceTree = "<group>"; };
+		AB10359813669C1A00216FE5 /* DCSliderDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCSliderDemoViewController.m; path = DCControls/DCSliderDemoViewController.m; sourceTree = "<group>"; };
+		AB10359913669C1A00216FE5 /* DCSliderDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DCSliderDemoViewController.xib; path = DCControls/DCSliderDemoViewController.xib; sourceTree = "<group>"; };
+		AB10359A13669C1A00216FE5 /* DCKnobDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DCKnobDemoViewController.xib; path = DCControls/DCKnobDemoViewController.xib; sourceTree = "<group>"; };
+		AB1035AE1366B14D00216FE5 /* DCControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCControl.h; sourceTree = "<group>"; };
+		AB1035AF1366B14D00216FE5 /* DCControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCControl.m; sourceTree = "<group>"; };
+		AB1035B11366B15700216FE5 /* DCKnob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCKnob.h; sourceTree = "<group>"; };
+		AB1035B21366B15700216FE5 /* DCKnob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCKnob.m; sourceTree = "<group>"; };
+		AB1035B31366B15700216FE5 /* DCSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSlider.h; sourceTree = "<group>"; };
+		AB1035B41366B15700216FE5 /* DCSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,16 @@
 		AB10356113669BE900216FE5 = {
 			isa = PBXGroup;
 			children = (
+				AB10358A13669C0100216FE5 /* DCControlsAppDelegate.h */,
+				AB10358B13669C0100216FE5 /* DCControlsAppDelegate.m */,
+				AB10358D13669C0C00216FE5 /* MainWindow.xib */,
+				AB10359313669C1A00216FE5 /* DCKnobDemoViewController.h */,
+				AB10359413669C1A00216FE5 /* DCKnobDemoViewController.m */,
+				AB10359A13669C1A00216FE5 /* DCKnobDemoViewController.xib */,
+				AB10359713669C1A00216FE5 /* DCSliderDemoViewController.h */,
+				AB10359813669C1A00216FE5 /* DCSliderDemoViewController.m */,
+				AB10359913669C1A00216FE5 /* DCSliderDemoViewController.xib */,
+				AB10357713669BE900216FE5 /* Supporting Files */,
 				AB10357613669BE900216FE5 /* DCControls */,
 				AB10356F13669BE900216FE5 /* Frameworks */,
 				AB10356D13669BE900216FE5 /* Products */,
@@ -74,10 +103,12 @@
 		AB10357613669BE900216FE5 /* DCControls */ = {
 			isa = PBXGroup;
 			children = (
-				AB10357F13669BE900216FE5 /* DCControlsAppDelegate.h */,
-				AB10358013669BE900216FE5 /* DCControlsAppDelegate.m */,
-				AB10358213669BE900216FE5 /* MainWindow.xib */,
-				AB10357713669BE900216FE5 /* Supporting Files */,
+				AB1035AE1366B14D00216FE5 /* DCControl.h */,
+				AB1035AF1366B14D00216FE5 /* DCControl.m */,
+				AB1035B11366B15700216FE5 /* DCKnob.h */,
+				AB1035B21366B15700216FE5 /* DCKnob.m */,
+				AB1035B31366B15700216FE5 /* DCSlider.h */,
+				AB1035B41366B15700216FE5 /* DCSlider.m */,
 			);
 			path = DCControls;
 			sourceTree = "<group>";
@@ -91,6 +122,7 @@
 				AB10357D13669BE900216FE5 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = DCControls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +173,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB10357B13669BE900216FE5 /* InfoPlist.strings in Resources */,
-				AB10358413669BE900216FE5 /* MainWindow.xib in Resources */,
+				AB10358E13669C0C00216FE5 /* MainWindow.xib in Resources */,
+				AB1035A013669C1A00216FE5 /* DCSliderDemoViewController.xib in Resources */,
+				AB1035A113669C1A00216FE5 /* DCKnobDemoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB10357E13669BE900216FE5 /* main.m in Sources */,
-				AB10358113669BE900216FE5 /* DCControlsAppDelegate.m in Sources */,
+				AB10358C13669C0100216FE5 /* DCControlsAppDelegate.m in Sources */,
+				AB10359D13669C1A00216FE5 /* DCKnobDemoViewController.m in Sources */,
+				AB10359F13669C1A00216FE5 /* DCSliderDemoViewController.m in Sources */,
+				AB1035B01366B14D00216FE5 /* DCControl.m in Sources */,
+				AB1035B51366B15700216FE5 /* DCKnob.m in Sources */,
+				AB1035B61366B15700216FE5 /* DCSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,14 +205,6 @@
 				AB10357A13669BE900216FE5 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		AB10358213669BE900216FE5 /* MainWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AB10358313669BE900216FE5 /* en */,
-			);
-			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -192,6 +223,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -207,6 +239,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -258,6 +291,7 @@
 				AB10358913669BE900216FE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
