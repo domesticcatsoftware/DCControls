@@ -21,6 +21,11 @@
 		AB1035B01366B14D00216FE5 /* DCControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1035AF1366B14D00216FE5 /* DCControl.m */; };
 		AB1035B51366B15700216FE5 /* DCKnob.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1035B21366B15700216FE5 /* DCKnob.m */; };
 		AB1035B61366B15700216FE5 /* DCSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1035B41366B15700216FE5 /* DCSlider.m */; };
+		ABDA50B6136FE07C00339835 /* DCCrossHairView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDA50AC136FE07C00339835 /* DCCrossHairView.m */; };
+		ABDA50B7136FE07C00339835 /* DCFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDA50AE136FE07C00339835 /* DCFrameView.m */; };
+		ABDA50B8136FE07C00339835 /* DCIntrospect.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDA50B0136FE07C00339835 /* DCIntrospect.m */; };
+		ABDA50B9136FE07C00339835 /* DCStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDA50B3136FE07C00339835 /* DCStatusBarOverlay.m */; };
+		ABDA50BA136FE07C00339835 /* DCUIViewSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDA50B5136FE07C00339835 /* DCUIViewSwizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +52,17 @@
 		AB1035B21366B15700216FE5 /* DCKnob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCKnob.m; sourceTree = "<group>"; };
 		AB1035B31366B15700216FE5 /* DCSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSlider.h; sourceTree = "<group>"; };
 		AB1035B41366B15700216FE5 /* DCSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSlider.m; sourceTree = "<group>"; };
+		ABDA50AB136FE07C00339835 /* DCCrossHairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCrossHairView.h; path = ../DCIntrospect/DCIntrospect/DCCrossHairView.h; sourceTree = "<group>"; };
+		ABDA50AC136FE07C00339835 /* DCCrossHairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCrossHairView.m; path = ../DCIntrospect/DCIntrospect/DCCrossHairView.m; sourceTree = "<group>"; };
+		ABDA50AD136FE07C00339835 /* DCFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCFrameView.h; path = ../DCIntrospect/DCIntrospect/DCFrameView.h; sourceTree = "<group>"; };
+		ABDA50AE136FE07C00339835 /* DCFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCFrameView.m; path = ../DCIntrospect/DCIntrospect/DCFrameView.m; sourceTree = "<group>"; };
+		ABDA50AF136FE07C00339835 /* DCIntrospect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCIntrospect.h; path = ../DCIntrospect/DCIntrospect/DCIntrospect.h; sourceTree = "<group>"; };
+		ABDA50B0136FE07C00339835 /* DCIntrospect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCIntrospect.m; path = ../DCIntrospect/DCIntrospect/DCIntrospect.m; sourceTree = "<group>"; };
+		ABDA50B1136FE07C00339835 /* DCIntrospectDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCIntrospectDefines.h; path = ../DCIntrospect/DCIntrospect/DCIntrospectDefines.h; sourceTree = "<group>"; };
+		ABDA50B2136FE07C00339835 /* DCStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCStatusBarOverlay.h; path = ../DCIntrospect/DCIntrospect/DCStatusBarOverlay.h; sourceTree = "<group>"; };
+		ABDA50B3136FE07C00339835 /* DCStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCStatusBarOverlay.m; path = ../DCIntrospect/DCIntrospect/DCStatusBarOverlay.m; sourceTree = "<group>"; };
+		ABDA50B4136FE07C00339835 /* DCUIViewSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCUIViewSwizzle.h; path = ../DCIntrospect/DCIntrospect/DCUIViewSwizzle.h; sourceTree = "<group>"; };
+		ABDA50B5136FE07C00339835 /* DCUIViewSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCUIViewSwizzle.m; path = ../DCIntrospect/DCIntrospect/DCUIViewSwizzle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +82,7 @@
 		AB10356113669BE900216FE5 = {
 			isa = PBXGroup;
 			children = (
+				ABDA50A9136FE06800339835 /* DCIntrospect */,
 				AB10358A13669C0100216FE5 /* DCControlsAppDelegate.h */,
 				AB10358B13669C0100216FE5 /* DCControlsAppDelegate.m */,
 				AB10358D13669C0C00216FE5 /* MainWindow.xib */,
@@ -123,6 +140,24 @@
 			);
 			name = "Supporting Files";
 			path = DCControls;
+			sourceTree = "<group>";
+		};
+		ABDA50A9136FE06800339835 /* DCIntrospect */ = {
+			isa = PBXGroup;
+			children = (
+				ABDA50AB136FE07C00339835 /* DCCrossHairView.h */,
+				ABDA50AC136FE07C00339835 /* DCCrossHairView.m */,
+				ABDA50AD136FE07C00339835 /* DCFrameView.h */,
+				ABDA50AE136FE07C00339835 /* DCFrameView.m */,
+				ABDA50AF136FE07C00339835 /* DCIntrospect.h */,
+				ABDA50B0136FE07C00339835 /* DCIntrospect.m */,
+				ABDA50B1136FE07C00339835 /* DCIntrospectDefines.h */,
+				ABDA50B2136FE07C00339835 /* DCStatusBarOverlay.h */,
+				ABDA50B3136FE07C00339835 /* DCStatusBarOverlay.m */,
+				ABDA50B4136FE07C00339835 /* DCUIViewSwizzle.h */,
+				ABDA50B5136FE07C00339835 /* DCUIViewSwizzle.m */,
+			);
+			name = DCIntrospect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +228,11 @@
 				AB1035B01366B14D00216FE5 /* DCControl.m in Sources */,
 				AB1035B51366B15700216FE5 /* DCKnob.m in Sources */,
 				AB1035B61366B15700216FE5 /* DCSlider.m in Sources */,
+				ABDA50B6136FE07C00339835 /* DCCrossHairView.m in Sources */,
+				ABDA50B7136FE07C00339835 /* DCFrameView.m in Sources */,
+				ABDA50B8136FE07C00339835 /* DCIntrospect.m in Sources */,
+				ABDA50B9136FE07C00339835 /* DCStatusBarOverlay.m in Sources */,
+				ABDA50BA136FE07C00339835 /* DCUIViewSwizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +263,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				RUN_CLANG_STATIC_ANALYZER = YES;
+				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -239,7 +279,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				RUN_CLANG_STATIC_ANALYZER = YES;
+				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
