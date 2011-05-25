@@ -3,7 +3,7 @@ DCControls
 
 DCControls provides some custom controls for use in iOS 3.2+.  These controls are the same as used in our app [Midi Touch](http://domesticcat.com.au/apps).
 
-You can follow me on Twitter: [@catdomestic](http://twitter.com/catdomestic), and check out our commercial apps at [domesticcat.com.au](http://domesticcat.com.au/apps).
+You can follow me on Twitter: [@patr](http://twitter.com/patr), and check out our commercial apps at [domesticcat.com.au](http://domesticcat.com.au/apps).
 
 DCKnob (subclass of DCControl)
 ------------------------------
