@@ -8,7 +8,7 @@ You can follow me on Twitter: [@catdomestic](http://twitter.com/catdomestic), an
 DCKnob (subclass of DCControl)
 ------------------------------
 
-![DCKnob Demo Image](http://domesticcat.com.au/projects/dcknob-small.png)
+![DCKnob Demo Image](http://domesticcat.com.au/projects/dcknob/dcknob-small.png)
 
 A rotary knob with all custom drawing.  Highly customizable, including:
 
@@ -22,7 +22,7 @@ A rotary knob with all custom drawing.  Highly customizable, including:
 DCSlider (subclass of DCControl)
 --------------------------------
 
-![DCSlider Demo Image](http://domesticcat.com.au/projects/dcslider-small.png)
+![DCSlider Demo Image](http://domesticcat.com.au/projects/dcslider/dcslider-small.png)
 
 A slider with all custom drawing.  Properties include:
 
