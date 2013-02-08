@@ -13,20 +13,20 @@
 {
 }
 
-@property (nonatomic, retain) DCKnob *knob;
-@property (nonatomic, retain) IBOutlet UIView *knobContainer;
-@property (nonatomic, retain) IBOutlet UIScrollView *controlScrollView;
-@property (nonatomic, retain) IBOutlet UILabel *doubleTapValueLabel;
-@property (nonatomic, retain) IBOutlet UILabel *tripleTapValueLabel;
-@property (nonatomic, retain) IBOutlet UILabel *ringBackgroundAlphaLabel;
-@property (nonatomic, retain) IBOutlet UILabel *sizeLabel;
-@property (nonatomic, retain) IBOutlet UISlider *sizeSlider;
-@property (nonatomic, retain) IBOutlet UILabel *arcStartLabel;
-@property (nonatomic, retain) IBOutlet UILabel *cutoutSizeLabel;
-@property (nonatomic, retain) IBOutlet UILabel *ringWidthLabel;
-@property (nonatomic, retain) IBOutlet UILabel *fontSizeLabel;
-@property (nonatomic, retain) IBOutlet UILabel *labelOffsetXLabel;
-@property (nonatomic, retain) IBOutlet UILabel *labelOffsetYLabel;
+@property (nonatomic, strong) DCKnob *knob;
+@property (nonatomic, strong) IBOutlet UIView *knobContainer;
+@property (nonatomic, strong) IBOutlet UIScrollView *controlScrollView;
+@property (nonatomic, strong) IBOutlet UILabel *doubleTapValueLabel;
+@property (nonatomic, strong) IBOutlet UILabel *tripleTapValueLabel;
+@property (nonatomic, strong) IBOutlet UILabel *ringBackgroundAlphaLabel;
+@property (nonatomic, strong) IBOutlet UILabel *sizeLabel;
+@property (nonatomic, strong) IBOutlet UISlider *sizeSlider;
+@property (nonatomic, strong) IBOutlet UILabel *arcStartLabel;
+@property (nonatomic, strong) IBOutlet UILabel *cutoutSizeLabel;
+@property (nonatomic, strong) IBOutlet UILabel *ringWidthLabel;
+@property (nonatomic, strong) IBOutlet UILabel *fontSizeLabel;
+@property (nonatomic, strong) IBOutlet UILabel *labelOffsetXLabel;
+@property (nonatomic, strong) IBOutlet UILabel *labelOffsetYLabel;
 
 - (IBAction)biDirectionalDidChange:(id)sender;
 - (IBAction)doubleTapValueDidChange:(id)sender;

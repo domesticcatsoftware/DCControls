@@ -20,12 +20,12 @@
 {
 }
 
-@property (nonatomic, assign) id delegate;
-@property (nonatomic, retain) UIColor *color;			// default: black
+@property (nonatomic, weak) id delegate;
+@property (nonatomic, strong) UIColor *color;			// default: black
 @property CGFloat backgroundColorAlpha;					// default: 0.3
 
-@property (nonatomic, retain) UIFont *labelFont;		// default: bold, system, 12.5
-@property (nonatomic, retain) UIColor *labelColor;		// default: use self.color
+@property (nonatomic, strong) UIFont *labelFont;		// default: bold, system, 12.5
+@property (nonatomic, strong) UIColor *labelColor;		// default: use self.color
 @property CGPoint labelOffset;							// default: CGPointZero
 
 @property CGFloat min;									// default: 0.0

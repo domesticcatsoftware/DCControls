@@ -19,19 +19,19 @@
 	UISlider *widthSlider;
 }
 
-@property (nonatomic, retain) DCSlider *slider;
-@property (nonatomic, retain) IBOutlet UIView *sliderContainer;
-@property (nonatomic, retain) IBOutlet UIScrollView *controlScrollView;
-@property (nonatomic, retain) IBOutlet UILabel *backgroundAlphaLabel;
-@property (nonatomic, retain) IBOutlet UILabel *widthLabel;
-@property (nonatomic, retain) IBOutlet UISlider *widthSlider;
-@property (nonatomic, retain) IBOutlet UILabel *heightLabel;
-@property (nonatomic, retain) IBOutlet UISlider *heightSlider;
-@property (nonatomic, retain) IBOutlet UILabel *handleSizeLabel;
-@property (nonatomic, retain) IBOutlet UISlider *handleSizeSlider;
-@property (nonatomic, retain) IBOutlet UISlider *sizeSlider;
-@property (nonatomic, retain) IBOutlet UILabel *cornerRadiusLabel;
-@property (nonatomic, retain) IBOutlet UILabel *fontSizeLabel;
+@property (nonatomic, strong) DCSlider *slider;
+@property (nonatomic, strong) IBOutlet UIView *sliderContainer;
+@property (nonatomic, strong) IBOutlet UIScrollView *controlScrollView;
+@property (nonatomic, strong) IBOutlet UILabel *backgroundAlphaLabel;
+@property (nonatomic, strong) IBOutlet UILabel *widthLabel;
+@property (nonatomic, strong) IBOutlet UISlider *widthSlider;
+@property (nonatomic, strong) IBOutlet UILabel *heightLabel;
+@property (nonatomic, strong) IBOutlet UISlider *heightSlider;
+@property (nonatomic, strong) IBOutlet UILabel *handleSizeLabel;
+@property (nonatomic, strong) IBOutlet UISlider *handleSizeSlider;
+@property (nonatomic, strong) IBOutlet UISlider *sizeSlider;
+@property (nonatomic, strong) IBOutlet UILabel *cornerRadiusLabel;
+@property (nonatomic, strong) IBOutlet UILabel *fontSizeLabel;
 
 - (IBAction)horizontalDidChange:(id)sender;
 - (IBAction)biDirectionalDidChange:(id)sender;

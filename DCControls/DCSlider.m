@@ -17,7 +17,7 @@
 	if ((self = [super initWithDelegate:aDelegate]))
 	{
 		// add the double tap gesture for jumping the value straight to that point
-		UITapGestureRecognizer *doubleTapGesture = [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTap:)] autorelease];
+		UITapGestureRecognizer *doubleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTap:)];
 		doubleTapGesture.numberOfTapsRequired = 2;
 		[self addGestureRecognizer:doubleTapGesture];
 
