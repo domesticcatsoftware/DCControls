@@ -16,7 +16,6 @@
 - (void)dealloc
 {
 	delegate = nil;
-
 }
 
 #pragma mark -

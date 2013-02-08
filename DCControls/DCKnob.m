@@ -154,6 +154,11 @@
 												   green:colorComponents[1]
 													blue:colorComponents[2]
 												   alpha:self.backgroundColorAlpha];
+        if (self.deselectedColor)
+        {
+            backgroundColor =  [self.deselectedColor colorWithAlphaComponent:self.backgroundColorAlpha];
+        }
+        
 		[backgroundColor set];
 
 		CGContextAddArc(context,
@@ -205,13 +210,13 @@
 			valueString = [NSString stringWithFormat:@"%03.0f%%", ((self.value - self.min) / (self.max - self.min)) * 100];
 		CGSize valueStringSize = [valueString sizeWithFont:self.labelFont
 												  forWidth:boundsRect.size.width
-											 lineBreakMode:UILineBreakModeTailTruncation];
+											 lineBreakMode:NSLineBreakByTruncatingTail];
 		[valueString drawInRect:CGRectMake(floorf((boundsRect.size.width - valueStringSize.width) / 2.0 + self.labelOffset.x),
 										   floorf((boundsRect.size.height - valueStringSize.height) / 2.0 + self.labelOffset.y),
 										   valueStringSize.width,
 										   valueStringSize.height)
 					   withFont:self.labelFont
-				  lineBreakMode:UILineBreakModeTailTruncation];		
+				  lineBreakMode:NSLineBreakByTruncatingTail];		
 	}
 
 	CGContextRestoreGState(context);

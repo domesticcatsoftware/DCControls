@@ -23,6 +23,7 @@
 @property (nonatomic, weak) id delegate;
 @property (nonatomic, strong) UIColor *color;			// default: black
 @property CGFloat backgroundColorAlpha;					// default: 0.3
+@property (nonatomic, strong) UIColor *deselectedColor; // default: nil
 
 @property (nonatomic, strong) UIFont *labelFont;		// default: bold, system, 12.5
 @property (nonatomic, strong) UIColor *labelColor;		// default: use self.color

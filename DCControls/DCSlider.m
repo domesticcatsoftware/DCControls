@@ -111,10 +111,18 @@
 											   green:colorComponents[1]
 												blue:colorComponents[2]
 											   alpha:self.backgroundColorAlpha];
+    if (self.deselectedColor)
+    {
+        backgroundColor =  [self.deselectedColor colorWithAlphaComponent:self.backgroundColorAlpha];
+    }
 	UIColor *lighterBackgroundColor = [UIColor colorWithRed:colorComponents[0]
 											   green:colorComponents[1]
 												blue:colorComponents[2]
 											   alpha:self.backgroundColorAlpha / 2.0];
+    if (self.deselectedColor)
+    {
+        lighterBackgroundColor =  [self.deselectedColor colorWithAlphaComponent:self.backgroundColorAlpha / 2.0];
+    }
 
 	// draw background of slider
 	[lighterBackgroundColor set];
@@ -193,7 +201,7 @@
 										   valueRect.size.width,
 										   valueRect.size.height)
 					   withFont:self.labelFont
-				  lineBreakMode:UILineBreakModeTailTruncation];
+				  lineBreakMode:NSLineBreakByTruncatingTail];
 	}
 }
 
