@@ -22,11 +22,11 @@
 		self.valueArcWidth = 15.0;
 
 		// add the gesture recognizers for double & triple taps
-		UITapGestureRecognizer *doubleTapGesture = [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTap:)] autorelease];
+		UITapGestureRecognizer *doubleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTap:)];
 		doubleTapGesture.numberOfTapsRequired = 2;
 		[self addGestureRecognizer:doubleTapGesture];
 
-		UITapGestureRecognizer *tripleTapGesture = [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tripleTap:)] autorelease];
+		UITapGestureRecognizer *tripleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tripleTap:)];
 		tripleTapGesture.numberOfTapsRequired = 3;
 		[self addGestureRecognizer:tripleTapGesture];
 	}
@@ -55,7 +55,7 @@
 {
 	if (self.allowsGestures)
 	{
-		[self performSelector:@selector(setValueFromGesture:) withObject:[NSNumber numberWithFloat:self.doubleTapValue] afterDelay:0.17];
+		[self performSelector:@selector(setValueFromGesture:) withObject:@(self.doubleTapValue) afterDelay:0.17];
 	}
 }
 
@@ -64,9 +64,9 @@
 	if (self.allowsGestures)
 	{
 		// cancel the double tap
-		[NSThread cancelPreviousPerformRequestsWithTarget:self selector:@selector(setValueFromGesture:) object:[NSNumber numberWithFloat:self.doubleTapValue]];
+		[NSThread cancelPreviousPerformRequestsWithTarget:self selector:@selector(setValueFromGesture:) object:@(self.doubleTapValue)];
 
-		[self performSelector:@selector(setValueFromGesture:) withObject:[NSNumber numberWithFloat:self.tripleTapValue]];
+		[self performSelector:@selector(setValueFromGesture:) withObject:@(self.tripleTapValue)];
 	}
 }
 
@@ -154,6 +154,11 @@
 												   green:colorComponents[1]
 													blue:colorComponents[2]
 												   alpha:self.backgroundColorAlpha];
+        if (self.deselectedColor)
+        {
+            backgroundColor =  [self.deselectedColor colorWithAlphaComponent:self.backgroundColorAlpha];
+        }
+        
 		[backgroundColor set];
 
 		CGContextAddArc(context,
@@ -205,13 +210,13 @@
 			valueString = [NSString stringWithFormat:@"%03.0f%%", ((self.value - self.min) / (self.max - self.min)) * 100];
 		CGSize valueStringSize = [valueString sizeWithFont:self.labelFont
 												  forWidth:boundsRect.size.width
-											 lineBreakMode:UILineBreakModeTailTruncation];
+											 lineBreakMode:NSLineBreakByTruncatingTail];
 		[valueString drawInRect:CGRectMake(floorf((boundsRect.size.width - valueStringSize.width) / 2.0 + self.labelOffset.x),
 										   floorf((boundsRect.size.height - valueStringSize.height) / 2.0 + self.labelOffset.y),
 										   valueStringSize.width,
 										   valueStringSize.height)
 					   withFont:self.labelFont
-				  lineBreakMode:UILineBreakModeTailTruncation];		
+				  lineBreakMode:NSLineBreakByTruncatingTail];		
 	}
 
 	CGContextRestoreGState(context);

@@ -22,24 +22,6 @@
 @synthesize labelOffsetXLabel;
 @synthesize labelOffsetYLabel;
 
-- (void)dealloc
-{
-	[knob release];
-    [controlScrollView release];
-	[knobContainer release];
-	[ringBackgroundAlphaLabel release];
-	[sizeLabel release];
-	[cutoutSizeLabel release];
-	[ringWidthLabel release];
-	[fontSizeLabel release];
-	[labelOffsetXLabel release];
-	[labelOffsetYLabel release];
-	[arcStartLabel release];
-	[sizeSlider release];
-	[doubleTapValueLabel release];
-	[tripleTapValueLabel release];
-    [super dealloc];
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -61,7 +43,7 @@
 	self.knobContainer.layer.shadowRadius = 9.0;
 	self.knobContainer.layer.shadowOpacity = 1.0;
 
-	self.knob = [[[DCKnob alloc] initWithDelegate:self] autorelease];
+	self.knob = [[DCKnob alloc] initWithDelegate:self];
 	CGFloat initialKnobSize = 100.0;
 	self.knob.frame = CGRectMake(floorf((self.knobContainer.frame.size.width - initialKnobSize) / 2),
 								 floorf((self.knobContainer.frame.size.height - initialKnobSize) / 2),

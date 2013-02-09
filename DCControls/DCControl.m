@@ -16,11 +16,6 @@
 - (void)dealloc
 {
 	delegate = nil;
-	[color release];
-	[labelFont release];
-	[labelColor release];
-
-	[super dealloc];
 }
 
 #pragma mark -

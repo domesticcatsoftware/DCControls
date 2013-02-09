@@ -21,23 +21,6 @@
 @synthesize cornerRadiusLabel;
 @synthesize fontSizeLabel;
 
-- (void)dealloc
-{
-	[slider release];
-    [controlScrollView release];
-	[sliderContainer release];
-	[backgroundAlphaLabel release];
-	[widthLabel release];
-	[heightLabel release];
-	[fontSizeLabel release];
-	[sizeSlider release];
-	[cornerRadiusLabel release];
-	[widthSlider release];
-	[heightSlider release];
-	[handleSizeLabel release];
-	[handleSizeSlider release];
-    [super dealloc];
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -59,7 +42,7 @@
 	self.sliderContainer.layer.shadowRadius = 9.0;
 	self.sliderContainer.layer.shadowOpacity = 1.0;
 
-	self.slider = [[[DCSlider alloc] initWithDelegate:self] autorelease];
+	self.slider = [[DCSlider alloc] initWithDelegate:self];
 	CGFloat initialsliderSize = 200.0;
 	self.slider.frame = CGRectMake(floorf((self.sliderContainer.frame.size.width - 40.0) / 2),
 								 floorf((self.sliderContainer.frame.size.height - initialsliderSize) / 2),
